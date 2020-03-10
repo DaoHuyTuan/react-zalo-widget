@@ -1,0 +1,14 @@
+version: "3"
+services:
+  node_daohuytuan:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: react-zalo-widget
+    container_name: react-zalo-widget
+    ports:
+      - "3000:3000"
+networks:
+  default:
+    external:
+      name: react-zalo-widget
