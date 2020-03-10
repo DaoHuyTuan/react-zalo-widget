@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "./components/Layout";
 const zaloWidget = `<div
-className="zalo-chat-widget"
+class="zalo-chat-widget"
 data-oaid="4465116411561777478"
 data-welcome-message="Rất vui khi được hỗ trợ bạn!"
 data-autopopup="0"
