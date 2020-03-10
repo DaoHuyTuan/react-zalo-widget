@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Layout from "./components/Layout";
 const zaloWidget = `<div
 className="zalo-chat-widget"
 data-oaid="579745863508352884"
@@ -6,7 +7,7 @@ data-welcome-message="Rất vui khi được hỗ trợ bạn!"
 data-autopopup="3600"
 data-width="350"
 data-height="420"
-></div>`;
+/>`;
 const Home = () => (
   <div className="container">
     <Head>
@@ -16,9 +17,9 @@ const Home = () => (
     </Head>
 
     <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+      <Layout>
+        <span>hello</span>
+      </Layout>
       <div dangerouslySetInnerHTML={{ __html: zaloWidget }} />
     </main>
 
